@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card COMPONENT</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,600;1,500&family=Comforter+Brush&family=Fraunces:wght@700;900&family=Inter:wght@400;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Supermercado+One&family=Vujahday+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+   
+}
+
+.main-card{
+   
+    width: 300px;
+    height: 510px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    padding:20px 20px ;
+    transform: translate(450px, 70px);
+  
+   
+}
+    
+.main-card .card-img{
+    height: 250px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: url(image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.main-card .card-img:hover {
+    background:linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(89, 243, 248, 0.938) 0%), url(image-equilibrium.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-card .card-img .img1{
+   display: none;
+   width: 40px;
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 110px;
+  background: transparent;
+  opacity: 1;
+
+}
+.main-card .card-img .img1 img{
+    background: transparent;
+}
+
+.main-card .card-img:hover .img1 {
+    display: block;
+    opacity: 1;
+}
+
+
+h2{
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+p{
+    font-size: 15px;
+    color:hsl(218, 45%, 75%);
+    margin-top: 20px;
+    background-color: transparent;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+   
+
+   
+    
+}
+.rating .amount{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    width: 100px;
+    padding: 0px 5px;
+    align-items: center;
+   
+}
+.rating .amount img{
+   
+    width: 15px;
+    height: 20px;
+    background: transparent;
+}
+.rating .amount p{
+    margin-bottom: 15px;
+    color: hsl(178, 100%, 50%);
+}
+.rating .time{
+    display: flex;
+}
+.rating .time{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    padding: 0px 5px;
+    align-items: center;
+}
+.rating .time img{
+    width: 12px;
+    height: 20px;
+    background: transparent;
+}
+.rating .time p{
+    margin-bottom: 15px;
+  
+}
+.created-by{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    width: 80%;
+    padding: 0px 5px;
+    align-items: center;
+   
+}
+.created-by img{
+   
+   width: 25px;
+   height: 25px;
+   background: transparent;
+   border-radius: 50%;
+   border: 1px solid white;
+}
+.created-by p{
+   margin-bottom: 20px;
+   font-size: 15px;
+  
+}
+.created-by p span{
+    color:  white;
+    font-weight: 300;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+.created-by p span:hover{
+    color: hsl(178, 100%, 50%);
+}
+@media screen and (max-width: 375px)
+{
+ .main-card
+ {
+   width: 300px;
+   height: 500px;
+   transform: translate(40px, 20px);
+  
+ }
+ .img1
+ {
+     height: 52%;
+ }   
+}
+</style>
+<body>
+    <div class="main-card">
+    <div class="card-img">
+        <div class="img1"><img src="icon-view.svg"></div>
+    </div>
+    <h2>Equillibrium  #3429</h2>
+    <p>Our Equillibrim collection promotes balance and calm.</p>
+    <div class="rating">
+        <div class="amount"><img src="icon-ethereum.svg" alt=""><p>0.041ETH</p></div>
+        <div class="time"><img src="icon-clock.svg" alt=""><p>3 days left</p></div>
+        
+    </div>
+    <div class="created-by"><img src="image-avatar.png" alt=""><p>creation of <span>Jules Wyvern</span></p></div>
+ </div>
+    
+</body>
+</html>
